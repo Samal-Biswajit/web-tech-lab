@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Table</title>
+    <style>
+     table {
+        border-collapse: collapse;
+      }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <caption>
+          A complex invoice table
+        </caption>
+        <!-- First Row -->
+     <thead style="font-style: italic;">
+           <tr>
+            <td colspan="4"> invoice#123456789</td>
+            <td colspan="1" align="right">22 August 2025</td>
+        </tr>
+
+        <!-- Second Row -->
+        <tr>
+            <td colspan="2">
+                <b>Pay to:</b><br>
+                Silicon University<br>
+                123 Main St.<br>
+                Cityville, NA 12345
+            </td>
+            <td colspan="3" align="right">
+                <b>Customer:</b><br>
+                Biswajit Samal<br>
+                Deulasahi<br>
+                Dhenkanal, Odisha 759001<br>
+            </td>
+        </tr>
+     </thead>
+
+        <!-- Table Headings -->
+       <tbody>
+         <tr>
+            <th colspan="2">Name / Description</th>
+            <th>Qty.</th>
+            <th>@</th>
+            <th>Cost</th>
+        </tr>
+
+        <!-- Items -->
+        <tr>
+            <th rowspan="2">Office Stationary</th>
+            <td>Paperclips</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+        </tr>
+        <tr>
+            <td>Staples (box)</td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Books</td>
+            <td>5</td>
+            <td>20.00</td>
+            <td>100.00</td>
+        </tr>
+       </tbody>
+
+        <!-- Subtotal -->
+        <tfoot>
+            <tr>
+            <td colspan="4"><b>Subtotal</b></td>
+            <td>210.00</td>
+        </tr>
+
+        <!-- Tax -->
+        <tr>
+            <td colspan="3"><b>Tax</b></td>
+            <td align="right">8%</td>
+            <td>16.80</td>
+        </tr>
+
+        <!-- Grand Total -->
+        <tr>
+            <td colspan="4"><b>Grand Total</b></td>
+            <td><b>$226.80</b></td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

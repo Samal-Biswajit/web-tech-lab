@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Images</title>
+  <style>
+
+    .container {
+      display: flex;
+      gap: 10px; /* space between images */
+      justify-content: center;
+      flex-wrap: wrap; /* wrap on small screens */
+      height: 100vh; /* full viewport height */
+      align-items: center; /* center vertically */
+
+    }
+    .container img {
+      width: 180px;   /* adjust size as you like */
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .container img:hover {
+      opacity: 0.8; /* simple hover effect */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="https://www.amazon.in/" target="_blank">
+      <img src="amazon.png" alt="Brand 1">
+    </a>
+    <a href= "https://www.apple.com/" target="_blank">
+      <img src="apple1.png" alt="Brand 2">
+    </a>
+    <a href="https://www.meta.com/in/" target="_blank">
+      <img src="meta.png" alt="Brand 3">
+    </a>
+    <a href="https://www.microsoft.com/en-in/" target="_blank">
+      <img src="microsoft.png" alt="Brand 4">
+    </a>
+    <a href="https://www.netflix.com/in/" target="_blank">
+      <img src="netflix.png" alt="Brand 5">
+    </a>
+  </div>
+
+</body>
+</html>
